@@ -48,7 +48,7 @@ export default {
         // let shuffledColors = this._.shuffle(colors)
         // Make sure to update the whole options config and not just a single property to allow the Vue watch catch the change.
         this.chartOptions = {
-          colors: colors
+          colors: this._.shuffle(colors)
         };
       }
     }
