@@ -30,7 +30,7 @@ export default {
           name: 'series-2',
           data: [2,19,34,75,12,45,65,22]
           },
-        ]
+        ],
       }
     },
     methods: {
@@ -45,7 +45,7 @@ export default {
           i++;
         }
         let colors = ['#008FFB', '#00E396', '#FEB019', '#FF4560', '#775DD0']
-        
+        // let shuffledColors = this._.shuffle(colors)
         // Make sure to update the whole options config and not just a single property to allow the Vue watch catch the change.
         this.chartOptions = {
           colors: colors
