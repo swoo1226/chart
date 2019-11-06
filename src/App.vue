@@ -4,13 +4,15 @@
      <div>
        <button @click="updateChart">Update!</button>
     </div>
+    <ApexDonut />
   </div>
 </template>
 
 <script>
-
+import ApexDonut from './components/ApexDonut'
 export default {
   name: 'app',
+  components: ApexDonut,
     data: function() {
       return {
         chartOptions: {
